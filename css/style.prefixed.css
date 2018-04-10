@@ -1,5 +1,7 @@
 /*		---	GRID	---		*/
 /*		columns size	*/
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,700,800,900");
 .col-1 {
   width: 8.33%;
 }
@@ -173,6 +175,43 @@ body {
   -ms-flex-pack: center;
       justify-content: center;
   margin-top: 40px;
+}
+
+.hero .hero-content {
+  display: -ms-flexbox;
+  display: flex;
+  height: 95vh;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center;
+}
+
+.hero h3 {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 32px;
+  color: white;
+}
+
+.hero h1 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 56px;
+  font-weight: 700;
+  color: white;
+}
+
+.hero button.primary {
+  background-color: #fed136;
+  text-transform: uppercase;
+  color: white;
+  padding: 15px 40px;
+  font-weight: bold;
+  margin-top: 30px;
 }
 
 .header {
