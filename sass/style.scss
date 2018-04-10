@@ -1,7 +1,7 @@
 @import 'grid';
 
 $main-color: blue;
-
+$main-menu-color: white;
 
 
 * {
@@ -18,13 +18,39 @@ body {
 
 .hero {
     background-image: url(../images/jumbotron-bg.jpg);
+    
+    .logo-section {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
 }
+
+
 
 .header {
     width: 100%;
 }
 
+.nav-section {
+    ul {
+        margin-top: 40px;
+        padding: 0;
+        list-style-type: none;
 
+        li {
+            display: inline-block;
+            a {
+                color: $main-menu-color;
+                text-decoration: none;
+                padding-right: 50px;
+            }
+        }
+    }
+    label {
+        display: none;
+    }
+}
 
 
 

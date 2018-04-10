@@ -167,8 +167,36 @@ body {
   background-image: url(../images/jumbotron-bg.jpg);
 }
 
+.hero .logo-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 40px;
+}
+
 .header {
   width: 100%;
+}
+
+.nav-section ul {
+  margin-top: 40px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-section ul li {
+  display: inline-block;
+}
+
+.nav-section ul li a {
+  color: white;
+  text-decoration: none;
+  padding-right: 50px;
+}
+
+.nav-section label {
+  display: none;
 }
 
 .test {
