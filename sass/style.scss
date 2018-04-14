@@ -9,8 +9,11 @@ $main-font: 'Poppins', sans-serif;
 $main-color: red;
 $light-main-color: white;
 $dark-main-color: black;
+$subheding-font-color: #777777;
 
 $brand-gold: #fed136;
+
+$background-color-2: #f7f7f7;
 
 * {
 	box-sizing: border-box;
@@ -18,8 +21,12 @@ $brand-gold: #fed136;
 }
 
 body {
-    background-color: pink;
+   // background-color: pink;
     color: $main-color;
+}
+
+section {
+    padding: 50px 0;
 }
 
 h2 {
@@ -40,7 +47,7 @@ h3 {
 .subheading {
     text-align: center;
     font-family: $main-font-italic;
-    color: $dark-main-color;
+    color: $subheding-font-color;
     font-size: 12px;
 }
 
@@ -52,18 +59,44 @@ h3 {
 
 /*  hero section */
 
+
+.header {
+    width: 100%;
+}
+
+.nav-section {
+    ul {
+        //margin-top: 40px;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            a {
+                color: $light-main-color;
+                text-decoration: none;
+                padding-right: 50px;
+            }
+        }
+    }
+    label {
+        display: none;
+    }
+}
+
+
 .hero {
     background-image: url(../images/jumbotron-bg.jpg);
     
     .logo-section {
         display: flex;
         justify-content: center;
-        margin-top: 40px;
+        //margin-top: 40px;
     }
 
     .hero-content{
         display: flex;
-        height: 95vh;
+        height: 85vh;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -89,6 +122,8 @@ h3 {
         padding: 15px 40px;
         font-weight: bold;
         margin-top: 30px;
+        border-radius: 5px;
+        border: none;
     }
 }
 
@@ -104,11 +139,27 @@ h3 {
     }
 }
 
+/*      portfolio       */
+
+.portfolio {
+    background-color: $background-color-2;
+    padding: 50px 0;
+    
+   [class*="col-"] {
+        text-align: center;
+    }
+}
 
 
 /*      about us        */
 
 .about-us {
+    .to-right {
+        text-align: right;
+    }
+    .to-left {
+        text-align:left;
+    }
     %radius {
         border-radius: 50%;
         height: 150px;
@@ -136,27 +187,14 @@ h3 {
 
 }
 
-.header {
-    width: 100%;
-}
+/*      team section    */
 
-.nav-section {
-    ul {
-        margin-top: 40px;
-        padding: 0;
-        list-style-type: none;
-
-        li {
-            display: inline-block;
-            a {
-                color: $light-main-color;
-                text-decoration: none;
-                padding-right: 50px;
-            }
-        }
-    }
-    label {
-        display: none;
+.team {
+    img {
+        border-radius: 50%;
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
     }
 }
 
