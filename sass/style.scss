@@ -14,6 +14,10 @@ $subheding-font-color: #777777;
 $brand-gold: #fed136;
 
 $background-color-2: #f7f7f7;
+$twitter-color: #00aced;
+$fb-color: #3b5998;
+$pinterest-color: #cb2028;
+$google-color: #d95232;
 
 * {
 	box-sizing: border-box;
@@ -209,13 +213,13 @@ h3 {
     }
     .social-media {
         margin: 0 auto;
-        width: 70%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         font-size: 18px;
         color: $dark-main-color;
     }
     .media-cell {
+        margin: 0 10px;
         background-color: $background-color-2;
         border: 2px solid $dark-main-color;
         padding: 5px;
@@ -225,6 +229,36 @@ h3 {
         display:flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
+    }
+    .twitter:hover {
+        color: $background-color-2;
+        background-color: $twitter-color;
+        border-color: $twitter-color;
+    }
+    .facebook:hover {
+        color: $background-color-2;
+        background-color: $fb-color;
+        border-color: $fb-color;
+    }
+    .pinterest:hover {
+        color: $background-color-2;
+        background-color: $pinterest-color;
+        border-color: $pinterest-color;
+    }
+    .google:hover {
+        color: $background-color-2;
+        background-color: $google-color;
+        border-color: $google-color;
+    }
+    .google-logo {
+        width: 20px;
+        height: 20px;
+    }
+    .google:hover .google-logo {
+        fill: red;
+        width: 20px;
+        height: 50px;
     }
 }
 
