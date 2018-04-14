@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,700,800,900');
 
 
-$font-family-h3-italic: 'Libre Baskerville', serif;
-$font-family-h1: 'Poppins', sans-serif;
+$main-font-italic: 'Libre Baskerville', serif;
+$main-font: 'Poppins', sans-serif;
 
-$main-color: blue;
+$main-color: red;
 $light-main-color: white;
+$dark-main-color: black;
 
 $brand-gold: #fed136;
 
@@ -19,6 +20,34 @@ $brand-gold: #fed136;
 body {
     background-color: pink;
     color: $main-color;
+}
+
+h2 {
+    font-family: $main-font;
+    text-transform: uppercase;
+    text-align: center;
+    color: $dark-main-color;
+    font-weight: 700;
+}
+
+h3 {
+    @extend h2;
+    margin-top: 5px;
+    text-transform: none;
+    font-size: 18px;
+}
+
+.subheading {
+    text-align: center;
+    font-family: $main-font-italic;
+    color: $dark-main-color;
+    font-size: 12px;
+}
+
+.subheading-italic {
+    @extend .subheading;
+    font-style: italic;
+    font-size: 14px;
 }
 
 /*  hero section */
@@ -41,13 +70,13 @@ body {
         text-align: center;
     }
     h3 {
-        font-family: $font-family-h3-italic;
+        font-family: $main-font-italic;
         font-style: italic;
         font-size: 32px;
         color: $light-main-color;
     }
     h1 {
-        font-family: $font-family-h1;
+        font-family: $main-font;
         text-transform: uppercase;
         font-size: 56px;
         font-weight: 700;
@@ -62,6 +91,16 @@ body {
         margin-top: 30px;
     }
 }
+
+/*      services section        */
+    
+.services {
+    
+    [class*="col-"] {
+        text-align: center;
+    }
+}
+
 
 
 

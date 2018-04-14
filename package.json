@@ -5,16 +5,13 @@
   "scripts": {
     "test": "npm-run-all test:*",
     "test:html": "globstar nu-html-checker *.html",
+    "test:js": "jshint js/",
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-	
-	"init:rimraf": "npm install rimraf -g",
-	
     "build": "npm-run-all build:* test",
-	
-	"build:clean":"rimraf css/*.css css/*.map",
+    "build:clean": "rimraf css/*.css css/*.map",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
@@ -36,8 +33,17 @@
     "onchange": "^3.3.0"
   },
   "dependencies": {
+    "jshint": "^2.9.5",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksandergorecki80/7_7__Projekt_do_portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aleksandergorecki80/7_7__Projekt_do_portfolio/issues"
+  },
+  "homepage": "https://github.com/aleksandergorecki80/7_7__Projekt_do_portfolio#readme",
   "description": ""
 }

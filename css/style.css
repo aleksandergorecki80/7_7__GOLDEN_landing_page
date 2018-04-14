@@ -161,7 +161,33 @@
 
 body {
   background-color: pink;
-  color: blue;
+  color: red;
+}
+
+h2, h3 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 5px;
+  text-transform: none;
+  font-size: 18px;
+}
+
+.subheading, .subheading-italic {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  color: black;
+  font-size: 12px;
+}
+
+.subheading-italic {
+  font-style: italic;
+  font-size: 14px;
 }
 
 /*  hero section */
@@ -206,6 +232,11 @@ body {
   padding: 15px 40px;
   font-weight: bold;
   margin-top: 30px;
+}
+
+/*      services section        */
+.services [class*="col-"] {
+  text-align: center;
 }
 
 .header {
