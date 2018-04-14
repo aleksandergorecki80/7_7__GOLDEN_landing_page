@@ -201,7 +201,6 @@
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -236,6 +235,24 @@ h3 {
 .subheading-italic {
   font-style: italic;
   font-size: 14px;
+}
+
+.to-right {
+  text-align: right;
+}
+
+.to-left {
+  text-align: left;
+}
+
+.to-center {
+  text-align: center;
+}
+
+.to-center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*  hero section */
@@ -326,14 +343,6 @@ h3 {
 }
 
 /*      about us        */
-.about-us .to-right {
-  text-align: right;
-}
-
-.about-us .to-left {
-  text-align: left;
-}
-
 .about-us .tbc, .about-us img {
   border-radius: 50%;
   height: 150px;
@@ -358,11 +367,36 @@ h3 {
 }
 
 /*      team section    */
+.team {
+  background-color: #f7f7f7;
+}
+
 .team img {
   border-radius: 50%;
   width: 220px;
   height: 220px;
   object-fit: cover;
+}
+
+.team .social-media {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  color: black;
+}
+
+.team .media-cell {
+  background-color: #f7f7f7;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .test {
