@@ -239,6 +239,10 @@ h3 {
   text-align: center;
 }
 
+.services .subheading, .services .subheading-italic {
+  padding: 0 30px;
+}
+
 .header {
   width: 100%;
 }
