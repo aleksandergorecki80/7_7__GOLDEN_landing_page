@@ -243,6 +243,30 @@ h3 {
   padding: 0 30px;
 }
 
+/*      about us        */
+.about-us .tbc, .about-us img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: 5px solid #f1f1f1;
+}
+
+.about-us .tbc {
+  background-color: #fed136;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  padding-top: 15px;
+}
+
+.about-us img {
+  object-fit: cover;
+}
+
 .header {
   width: 100%;
 }

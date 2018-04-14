@@ -106,6 +106,35 @@ h3 {
 
 
 
+/*      about us        */
+
+.about-us {
+    %radius {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        border: 5px solid #f1f1f1;
+    }
+    .tbc {
+        @extend %radius;
+        background-color: #fed136;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $light-main-color;
+        padding-top: 15px;
+        
+    }
+    img {
+        @extend %radius;
+        object-fit: cover;
+    }
+
+
+}
 
 .header {
     width: 100%;
