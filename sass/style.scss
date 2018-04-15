@@ -1,3 +1,4 @@
+@import 'mobile';
 @import 'grid';
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,700,800,900');
@@ -20,7 +21,7 @@ $footer-color: #222222;
 
 * {
 	box-sizing: border-box;
-//    border: 1px solid red;
+    border: 1px solid red;
 }
 
 body {
@@ -124,7 +125,7 @@ h4, h5 {
             }
         }
     }
-    label {
+    input, label {
         display: none;
     }
 }

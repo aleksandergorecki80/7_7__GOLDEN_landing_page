@@ -1,7 +1,66 @@
-/*		---	GRID	---		*/
-/*		columns size	*/
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,700,800,900");
+@media (max-width: 767px) {
+  /*		For tablets		*/
+  body {
+    background-color: pink;
+  }
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+  .cleear-s::before,
+  .cleear-s::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .hero .header label {
+    display: inline-block;
+    float: right;
+  }
+  .hero .header #menu-button:not(:checked) ~ ul {
+    display: none;
+  }
+  .hero .header #menu-button:checked ~ ul {
+    display: block;
+  }
+}
+
+/*		---	GRID	---		*/
+/*		columns size	*/
 .col-1 {
   width: 8.33%;
 }
@@ -201,6 +260,7 @@
 
 * {
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -308,7 +368,7 @@ h4, h5 {
   padding-right: 50px;
 }
 
-.nav-section label {
+.nav-section input, .nav-section label {
   display: none;
 }
 
