@@ -18,10 +18,12 @@ $twitter-color: #00aced;
 $fb-color: #3b5998;
 $pinterest-color: #cb2028;
 $google-color: #d95232;
+$footer-color: #222222;
+
 
 * {
 	box-sizing: border-box;
-//    border: 1px solid red;
+    border: 1px solid red;
 }
 
 body {
@@ -75,6 +77,16 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+
+.btn {
+    background-color: $brand-gold;
+    text-transform: uppercase;
+    color: $light-main-color;
+    padding: 15px 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
 }
 
 /*  hero section */
@@ -135,15 +147,8 @@ h3 {
         font-weight: 700;
         color: $light-main-color;
     }
-    button.primary{
-        background-color: $brand-gold;
-        text-transform: uppercase;
-        color: $light-main-color;
-        padding: 15px 40px;
-        font-weight: bold;
-        margin-top: 30px;
-        border-radius: 5px;
-        border: none;
+    .hero-btn {
+        margin-top: 40px;
     }
 }
 
@@ -163,11 +168,13 @@ h3 {
 
 .portfolio {
     background-color: $background-color-2;
-    padding: 50px 0;
-    
+    .container {
+        width: 80%;
+    }
    [class*="col-"] {
         text-align: center;
     }
+
 }
 
 
@@ -254,22 +261,80 @@ h3 {
     .google-logo {
         width: 20px;
         height: 20px;
-    }
-    .google:hover .google-logo {
         fill: red;
-        width: 20px;
-        height: 50px;
+    }
+    .google-plus, .google-logo {
+        fill: $dark-main-color;
+    }
+    .google:hover .google-logo, .google:hover .google-plus {
+        fill: $background-color-2;
+    }
+}
+
+.logotypes {
+    .logos {
+        margin: 0 auto;
+        width: 70%;
+        display: flex ;
+        justify-content: space-between;
     }
 }
 
 
+/*      contakt     */
+.contact {
+    background-image: url(../images/contakt-bg.jpg);
+ 
+    .container {
+        width: 80%;
+    }
 
+    input[type=text] {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px 20px;
+        border-radius: 3px;
+        border: none;
+    }
 
+    textarea {
+        width: 100%;
+        height: 162px;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        resize: none;
+        margin-top: 10px;
+    }
+    
+    h2 {
+        color: $light-main-color;
+    }
+}
 
-
-
-
-
+/*      footer      */
+.footer {
+    .social-media-reverse {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        color: $light-main-color;
+    }
+    .media-cell-reverse {
+        margin: 0 10px;
+        background-color: $footer-color;
+        border: 2px solid $footer-color;
+        padding: 5px;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
 
 
 

@@ -201,6 +201,7 @@
 
 * {
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -253,6 +254,16 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn {
+  background-color: #fed136;
+  text-transform: uppercase;
+  color: white;
+  padding: 15px 40px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
 }
 
 /*  hero section */
@@ -312,15 +323,8 @@ h3 {
   color: white;
 }
 
-.hero button.primary {
-  background-color: #fed136;
-  text-transform: uppercase;
-  color: white;
-  padding: 15px 40px;
-  font-weight: bold;
-  margin-top: 30px;
-  border-radius: 5px;
-  border: none;
+.hero .hero-btn {
+  margin-top: 40px;
 }
 
 /*      services section        */
@@ -335,7 +339,10 @@ h3 {
 /*      portfolio       */
 .portfolio {
   background-color: #f7f7f7;
-  padding: 50px 0;
+}
+
+.portfolio .container {
+  width: 80%;
 }
 
 .portfolio [class*="col-"] {
@@ -427,12 +434,76 @@ h3 {
 .team .google-logo {
   width: 20px;
   height: 20px;
+  fill: red;
 }
 
-.team .google:hover .google-logo {
-  fill: red;
-  width: 20px;
-  height: 50px;
+.team .google-plus, .team .google-logo {
+  fill: black;
+}
+
+.team .google:hover .google-logo, .team .google:hover .google-plus {
+  fill: #f7f7f7;
+}
+
+.logotypes .logos {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*      contakt     */
+.contact {
+  background-image: url(../images/contakt-bg.jpg);
+}
+
+.contact .container {
+  width: 80%;
+}
+
+.contact input[type=text] {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: none;
+}
+
+.contact textarea {
+  width: 100%;
+  height: 162px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  resize: none;
+  margin-top: 10px;
+}
+
+.contact h2, .contact h3 {
+  color: white;
+}
+
+/*      footer      */
+.footer .social-media-reverse {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+}
+
+.footer .media-cell-reverse {
+  margin: 0 10px;
+  background-color: #222222;
+  border: 2px solid #222222;
+  padding: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .test {
