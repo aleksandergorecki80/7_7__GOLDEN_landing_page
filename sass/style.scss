@@ -20,11 +20,10 @@ $footer-color: #222222;
 
 * {
 	box-sizing: border-box;
-    border: 1px solid red;
+//    border: 1px solid red;
 }
 
 body {
-   // background-color: pink;
     color: $dark-main-color;
 }
 
@@ -183,12 +182,20 @@ h4, h5 {
 .portfolio {
     background-color: $background-color-2;
     .container {
-        width: 80%;
+        width: 70%;
     }
    [class*="col-"] {
         text-align: center;
     }
-
+   .item {
+       background-color: $light-main-color;
+       margin: 0;
+       padding: 0;
+   }
+   img {
+       object-fit: cover;
+       width: 100%;
+   }
 }
 
 
@@ -264,7 +271,7 @@ h4, h5 {
     background-image: url(../images/contakt-bg.jpg);
  
     .container {
-        width: 80%;
+        width: 70%;
     }
 
     input[type=text] {
