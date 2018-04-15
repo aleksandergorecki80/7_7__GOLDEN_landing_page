@@ -308,6 +308,7 @@ h4, h5 {
 
 .hero {
   background-image: url(../images/jumbotron-bg.jpg);
+  background-size: cover;
 }
 
 .hero .logo-section {
@@ -398,6 +399,26 @@ h4, h5 {
 
 .about-us img {
   object-fit: cover;
+}
+
+.about-us .for-photo {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us .for-line {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  z-index: -10;
+  height: 100%;
+  top: 50%;
+}
+
+.about-us .kreska {
+  border-left: 4px solid #f7f7f7;
 }
 
 /*      team section    */
