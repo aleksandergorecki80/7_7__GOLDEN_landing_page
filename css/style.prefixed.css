@@ -205,7 +205,7 @@
 }
 
 body {
-  color: red;
+  color: black;
 }
 
 section {
@@ -224,6 +224,10 @@ h3 {
   margin-top: 5px;
   text-transform: none;
   font-size: 18px;
+}
+
+h4, h5 {
+  font-weight: bold;
 }
 
 .subheading, .subheading-italic {
@@ -257,6 +261,7 @@ h3 {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  height: 100%;
 }
 
 .btn {
@@ -267,6 +272,21 @@ h3 {
   font-weight: bold;
   border-radius: 5px;
   border: none;
+}
+
+.team .media-cell, .footer .media-cell-reverse {
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  cursor: pointer;
 }
 
 /*  hero section */
@@ -411,58 +431,12 @@ h3 {
 }
 
 .team .media-cell {
-  margin: 0 10px;
   background-color: #f7f7f7;
   border: 2px solid black;
-  padding: 5px;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  cursor: pointer;
-}
-
-.team .twitter:hover {
-  color: #f7f7f7;
-  background-color: #00aced;
-  border-color: #00aced;
-}
-
-.team .facebook:hover {
-  color: #f7f7f7;
-  background-color: #3b5998;
-  border-color: #3b5998;
-}
-
-.team .pinterest:hover {
-  color: #f7f7f7;
-  background-color: #cb2028;
-  border-color: #cb2028;
-}
-
-.team .google:hover {
-  color: #f7f7f7;
-  background-color: #d95232;
-  border-color: #d95232;
-}
-
-.team .google-logo {
-  width: 20px;
-  height: 20px;
-  fill: red;
 }
 
 .team .google-plus, .team .google-logo {
   fill: black;
-}
-
-.team .google:hover .google-logo, .team .google:hover .google-plus {
-  fill: #f7f7f7;
 }
 
 .logotypes .logos {
@@ -517,20 +491,47 @@ h3 {
 }
 
 .footer .media-cell-reverse {
-  margin: 0 10px;
   background-color: #222222;
   border: 2px solid #222222;
-  padding: 5px;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  cursor: pointer;
+}
+
+.footer .google-plus, .footer .google-logo {
+  fill: white;
+}
+
+/*      social media hover icons        */
+.twitter:hover {
+  color: #f7f7f7;
+  background-color: #00aced;
+  border-color: #00aced;
+}
+
+.facebook:hover {
+  color: #f7f7f7;
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.pinterest:hover {
+  color: #f7f7f7;
+  background-color: #cb2028;
+  border-color: #cb2028;
+}
+
+.google:hover {
+  color: #f7f7f7;
+  background-color: #d95232;
+  border-color: #d95232;
+}
+
+.google-logo {
+  width: 20px;
+  height: 20px;
+  fill: red;
+}
+
+.google:hover .google-logo, .google:hover .google-plus {
+  fill: #f7f7f7;
 }
 
 .test {

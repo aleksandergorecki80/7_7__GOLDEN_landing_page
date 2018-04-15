@@ -6,13 +6,10 @@
 $main-font-italic: 'Libre Baskerville', serif;
 $main-font: 'Poppins', sans-serif;
 
-$main-color: red;
 $light-main-color: white;
 $dark-main-color: black;
 $subheding-font-color: #777777;
-
 $brand-gold: #fed136;
-
 $background-color-2: #f7f7f7;
 $twitter-color: #00aced;
 $fb-color: #3b5998;
@@ -28,7 +25,7 @@ $footer-color: #222222;
 
 body {
    // background-color: pink;
-    color: $main-color;
+    color: $dark-main-color;
 }
 
 section {
@@ -48,6 +45,10 @@ h3 {
     margin-top: 5px;
     text-transform: none;
     font-size: 18px;
+}
+
+h4, h5 {
+    font-weight: bold;
 }
 
 .subheading {
@@ -76,7 +77,8 @@ h3 {
 .to-center-flex {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    height: 100%; 
 }
 
 .btn {
@@ -87,6 +89,18 @@ h3 {
     font-weight: bold;
     border-radius: 5px;
     border: none;
+}
+
+%media-bg {
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 /*  hero section */
@@ -226,48 +240,12 @@ h3 {
         color: $dark-main-color;
     }
     .media-cell {
-        margin: 0 10px;
+        @extend %media-bg;
         background-color: $background-color-2;
         border: 2px solid $dark-main-color;
-        padding: 5px;
-        border-radius: 50%;
-        width: 35px;
-        height: 35px;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    }
-    .twitter:hover {
-        color: $background-color-2;
-        background-color: $twitter-color;
-        border-color: $twitter-color;
-    }
-    .facebook:hover {
-        color: $background-color-2;
-        background-color: $fb-color;
-        border-color: $fb-color;
-    }
-    .pinterest:hover {
-        color: $background-color-2;
-        background-color: $pinterest-color;
-        border-color: $pinterest-color;
-    }
-    .google:hover {
-        color: $background-color-2;
-        background-color: $google-color;
-        border-color: $google-color;
-    }
-    .google-logo {
-        width: 20px;
-        height: 20px;
-        fill: red;
     }
     .google-plus, .google-logo {
         fill: $dark-main-color;
-    }
-    .google:hover .google-logo, .google:hover .google-plus {
-        fill: $background-color-2;
     }
 }
 
@@ -322,20 +300,46 @@ h3 {
         color: $light-main-color;
     }
     .media-cell-reverse {
-        margin: 0 10px;
+        @extend %media-bg;
         background-color: $footer-color;
         border: 2px solid $footer-color;
-        padding: 5px;
-        border-radius: 50%;
-        width: 35px;
-        height: 35px;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
+    }
+   .google-plus, .google-logo {
+        fill: $light-main-color;
     }
 }
 
+/*      social media hover icons        */
+
+.twitter:hover {
+    color: $background-color-2;
+    background-color: $twitter-color;
+    border-color: $twitter-color;
+}
+
+.facebook:hover {
+    color: $background-color-2;
+    background-color: $fb-color;
+    border-color: $fb-color;
+}
+.pinterest:hover {
+    color: $background-color-2;
+    background-color: $pinterest-color;
+    border-color: $pinterest-color;
+}
+.google:hover {
+    color: $background-color-2;
+    background-color: $google-color;
+    border-color: $google-color;
+}
+.google-logo {
+    width: 20px;
+    height: 20px;
+    fill: red;
+}
+.google:hover .google-logo, .google:hover .google-plus {
+    fill: $background-color-2;
+}
 
 
 .test {
