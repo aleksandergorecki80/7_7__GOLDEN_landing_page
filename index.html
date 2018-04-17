@@ -9,7 +9,8 @@
 	<meta name="description" content="Opis w Google" />
 	<meta name="keywords" content="s³owa, kluczowe, wypisane, po, porzecinku" />
 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">	-->	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">	-->
+	
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/style.prefixed.css" type="text/css">
 	
@@ -20,27 +21,30 @@
 
 <body>
 	    <!--        hero        -->
-    <section class="hero">
-		<div class="row header">
-			<div class="col-6 logo-section"><img src="images/logo-golden.png" alt="Logo"></div>
-			<div class="col-6 nav-section">
-				<input type="checkbox" id="menu-button">
-				<label for="menu-button"><i class="fas fa-bars"></i></label>
-				<ul>
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">SERVICES</a></li>
-					<li><a href="#">PORTFOLIO</a></li>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">CONTACT</a></li>
-				</ul>
+    
+		<header>
+			<div class="hero">	
+				<nav class="container row ">
+						<img src='images/logo-golden.png' />
+						<input type="checkbox" id="menu-button">
+						<label for="menu-button"><i class="fas fa-bars"></i></label>
+					<ul>
+						<li><a href="#">Home page</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Staff profile</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="hero-content">
+					<h3>Welcome To Our Studio!</h3>
+					<h1>It's nice to meet you</h1>
+					<button class="btn hero-btn">tell me more</button>
+				</div>
 			</div>
-		</div>
-		<div class="hero-content">
-			<h3>Welcome To Our Studio!</h3>
-			<h1>It's nice to meet you</h1>
-			<button class="btn hero-btn">tell me more</button>
-		</div>
-	</section>
+		</header>
+
+	
 	
 	<!--	services		-->
 	<section class="services">
@@ -314,7 +318,7 @@ ssim. Donec porttitora entum suscipit.</p>
 						<p class="subheading-italic">Proin iaculis purus consequat sem cure.</p>
 					</div>
 			</div>
-			<div class="col-6">
+			<div class="col-6 form-left">
 			<form>
 					<input type="text" name="firstname" placeholder="Mickey">
 					<input type="text" name="lastname" placeholder="Mouse">
@@ -336,7 +340,7 @@ ssim. Donec porttitora entum suscipit.</p>
 	<section class="footer">
 		<div class="container">
 				<div class="row to-center-flex">
-					<div class="col-4 to-center-flex"><div>Copyright 2014 FreebiesXpress.com</div></div>
+					<div class="col-4 to-center-flex"><div class="copyrights">Copyright 2014 FreebiesXpress.com</div></div>
 					<div class="col-4 col-offset-right-4">
 						<div class="social-media-reverse">
 							<div class="twitter media-cell-reverse"><i class="fab fa-twitter"></i></div>

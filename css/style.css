@@ -1,66 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i");
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,700,800,900");
-@media (max-width: 767px) {
-  /*		For tablets		*/
-  body {
-    background-color: pink;
-  }
-  .col-s-1 {
-    width: 8.33%;
-  }
-  .col-s-2 {
-    width: 16.66%;
-  }
-  .col-s-3 {
-    width: 25%;
-  }
-  .col-s-4 {
-    width: 33.33%;
-  }
-  .col-s-5 {
-    width: 41.66%;
-  }
-  .col-s-6 {
-    width: 50%;
-  }
-  .col-s-7 {
-    width: 58.33%;
-  }
-  .col-s-8 {
-    width: 66.66%;
-  }
-  .col-s-9 {
-    width: 75%;
-  }
-  .col-s-10 {
-    width: 83.33%;
-  }
-  .col-s-11 {
-    width: 91.66%;
-  }
-  .col-s-12 {
-    width: 100%;
-  }
-  .cleear-s::before,
-  .cleear-s::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .hero .header label {
-    display: inline-block;
-    float: right;
-  }
-  .hero .header #menu-button:not(:checked) ~ ul {
-    display: none;
-  }
-  .hero .header #menu-button:checked ~ ul {
-    display: block;
-  }
-}
-
 /*		---	GRID	---		*/
 /*		columns size	*/
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,700,800,900");
 .col-1 {
   width: 8.33%;
 }
@@ -265,6 +206,8 @@
 
 body {
   color: black;
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -287,6 +230,10 @@ h3 {
 
 h4, h5 {
   font-weight: bold;
+}
+
+.container {
+  margin: 0 auto;
 }
 
 .subheading, .subheading-italic {
@@ -343,37 +290,38 @@ h4, h5 {
 }
 
 /*  hero section */
-.header {
+header {
   width: 100%;
 }
 
-.nav-section ul {
+header nav img {
+  float: left;
+}
+
+header nav ul {
+  float: right;
   padding: 0;
   list-style-type: none;
 }
 
-.nav-section ul li {
+header nav ul li {
   display: inline-block;
 }
 
-.nav-section ul li a {
+header nav ul li a {
   color: white;
   text-decoration: none;
   padding-right: 50px;
+  font-family: "Poppins", sans-serif;
 }
 
-.nav-section input, .nav-section label {
+header nav input, header nav label {
   display: none;
 }
 
 .hero {
   background-image: url(../images/jumbotron-bg.jpg);
   background-size: cover;
-}
-
-.hero .logo-section {
-  display: flex;
-  justify-content: center;
 }
 
 .hero .hero-content {
@@ -405,6 +353,10 @@ h4, h5 {
 }
 
 /*      services section        */
+.services .container {
+  width: 80%;
+}
+
 .services [class*="col-"] {
   text-align: center;
 }
@@ -548,6 +500,11 @@ h4, h5 {
   color: white;
 }
 
+.contact .form-left {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 /*      footer      */
 .footer .social-media-reverse {
   margin: 0 auto;
@@ -564,6 +521,11 @@ h4, h5 {
 
 .footer .google-plus, .footer .google-logo {
   fill: white;
+}
+
+.footer .copyrights {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 /*      social media hover icons        */
@@ -601,14 +563,48 @@ h4, h5 {
   fill: #f7f7f7;
 }
 
-.test {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.test2 {
-  display: flex;
-  flex-wrap: wrap;
+@media (max-width: 767px) {
+  /*		For tablets		*/
+  body {
+    background-color: pink;
+  }
+  /*		navigation 		*/
+  header {
+    position: static;
+    height: 100%;
+  }
+  header .container {
+    text-align: center;
+  }
+  header nav img {
+    margin-left: 20px;
+  }
+  header nav ul {
+    float: none;
+  }
+  header nav ul li {
+    display: block;
+    z-index: 100;
+  }
+  header nav ul li a {
+    line-height: 50px;
+  }
+  header nav .fa-bars {
+    color: white;
+    font-size: 40px;
+    line-height: 70px;
+    margin: 15px 15px 0 0;
+  }
+  header nav label {
+    display: inline-block;
+    float: right;
+  }
+  header nav #menu-button:not(:checked) ~ ul {
+    display: none;
+  }
+  header nav #menu-button:checked ~ ul {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
