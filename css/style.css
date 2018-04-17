@@ -494,6 +494,8 @@ header nav input, header nav label {
   padding: 10px 20px;
   border-radius: 3px;
   border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
 }
 
 .contact textarea {
@@ -504,6 +506,8 @@ header nav input, header nav label {
   border-radius: 4px;
   resize: none;
   margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
 }
 
 .contact h2, .contact h3 {
@@ -656,6 +660,9 @@ header nav input, header nav label {
 @media (min-width: 767px) and (max-width: 1200px) {
   header nav {
     padding: 40px 80px 0 100px;
+  }
+  header nav ul li {
+    padding-right: 20px;
   }
 }
 
