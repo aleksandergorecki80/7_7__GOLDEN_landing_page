@@ -124,18 +124,18 @@ header {
             float: right;
             //margin-top: 40px;
             padding: 0;
+            margin: 0;
             list-style-type: none;
 
             li {
                 display: inline-block;
-                
-                a {
+                padding-right: 50px;
+            }
+            a {
                     color: $light-main-color;
                     text-decoration: none;
-                    padding-right: 50px;
                     font-family: $main-font;
                 }
-            }
         }
         input, label {
             display: none;
@@ -404,11 +404,14 @@ header {
 
         nav {
             img {
-                margin-left: 20px;
+                //margin-left: 20px;
+                float: none;
             }
             ul {
+                margin-top: 10px;
 		        float: none;
                 li {
+                    padding-right: 0;
 		            display: block;	
 		            z-index: 100;
                     a {
@@ -416,10 +419,10 @@ header {
                     }
 	            }
 	        }
-                    .fa-bars {
+           .fa-bars {
             color: white;
-            font-size: 40px;
-            line-height: 70px;
+            font-size: 30px;
+            line-height: 60px;
             margin: 15px 15px 0 0;
         }
 
@@ -436,9 +439,12 @@ header {
                 display: block;	
             }
        }
+      }
+    }
+
+    .services {
+        .container {
+            width: 90%;
         }
-        
-
-
     }
    }
