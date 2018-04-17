@@ -20,7 +20,7 @@ $footer-color: #222222;
 
 * {
 	box-sizing: border-box;
-    border: 1px solid red;
+//    border: 1px solid red;
 }
 
 body {
@@ -429,7 +429,7 @@ header {
 	        }
 
         nav {
-            padding: 0;
+            padding: 20px 0 0 0;
             img {
                 //margin-left: 20px;
                 float: none;
@@ -438,6 +438,7 @@ header {
             ul {
                 margin-top: 10px;
 		        float: none;
+                background-color: rgba(0, 0, 0, 0.5);
                 li {
                     padding-right: 0;
 		            display: block;	

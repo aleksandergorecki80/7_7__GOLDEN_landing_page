@@ -201,7 +201,6 @@
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -599,7 +598,7 @@ header nav input, header nav label {
     text-align: center;
   }
   header nav {
-    padding: 0;
+    padding: 20px 0 0 0;
   }
   header nav img {
     float: none;
@@ -608,6 +607,7 @@ header nav input, header nav label {
   header nav ul {
     margin-top: 10px;
     float: none;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   header nav ul li {
     padding-right: 0;
