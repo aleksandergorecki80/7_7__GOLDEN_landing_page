@@ -290,8 +290,9 @@ h4, h5 {
 }
 
 /*  hero section */
-header {
+header nav {
   width: 100%;
+  padding-top: 40px;
 }
 
 header nav img {
@@ -407,7 +408,11 @@ header nav input, header nav label {
   text-transform: uppercase;
   font-weight: bold;
   color: white;
-  padding-top: 15px;
+  padding-top: 10px;
+}
+
+.about-us .tbc p {
+  margin: 5px 0;
 }
 
 .about-us img {
@@ -468,6 +473,7 @@ header nav input, header nav label {
   width: 70%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /*      contakt     */
@@ -564,10 +570,21 @@ header nav input, header nav label {
   fill: #f7f7f7;
 }
 
+/*      ---------   media styles    ----------------------  */
 @media (max-width: 767px) {
   /*		For tablets		*/
   body {
     background-color: pink;
+  }
+  section {
+    padding: 20px 0;
+  }
+  .no-ofset-s {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .hide-for-s {
+    display: none;
   }
   /*		navigation 		*/
   header {
@@ -609,6 +626,22 @@ header nav input, header nav label {
     display: block;
   }
   .services .container {
+    width: 90%;
+  }
+  .about-us h4 {
+    margin: 0;
+  }
+  .about-us .hide-for-s {
+    display: none;
+  }
+  .logotypes .logos {
+    width: 90%;
+  }
+  .logotypes .logos img {
+    width: 50%;
+    height: 50%;
+  }
+  .contact .container {
     width: 90%;
   }
 }
