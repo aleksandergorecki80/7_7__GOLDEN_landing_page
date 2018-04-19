@@ -634,6 +634,10 @@ header nav input, header nav label {
   header nav #menu-button:checked ~ ul {
     display: block;
   }
+  .hero h1 {
+    margin: 4.25vh 20px;
+    font-size: 36px;
+  }
   .services .container {
     width: 90%;
   }
