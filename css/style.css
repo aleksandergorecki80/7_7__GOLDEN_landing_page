@@ -201,6 +201,7 @@
 
 * {
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -353,7 +354,7 @@ header nav input, header nav label {
 }
 
 .hero .hero-btn {
-  margin-top: 40px;
+  margin-top: 0vh, 8;
 }
 
 /*      services section        */
@@ -633,7 +634,21 @@ header nav input, header nav label {
   header nav #menu-button:checked ~ ul {
     display: block;
   }
+  /*      hero        */
+  .hero h1 {
+    margin: calc($hero-bg-height*0.05) 20px;
+    font-size: 26px;
+  }
+  .hero h3 {
+    margin: calc($hero-bg-height*0.05) 20px;
+    font-size: 18px;
+  }
+  /*  services    */
   .services .container {
+    width: 90%;
+  }
+  /*      about us    */
+  .about-us .container {
     width: 90%;
   }
   .about-us h4 {
@@ -641,6 +656,20 @@ header nav input, header nav label {
   }
   .about-us .hide-for-s {
     display: none;
+  }
+  .about-us .tbc, .about-us img {
+    height: 110px;
+    width: 110px;
+    border: 3px solid #f1f1f1;
+  }
+  .about-us .tbc p {
+    margin: 2px 0;
+  }
+  .about-us p {
+    font-size: 10px;
+  }
+  .about-us h4 {
+    font-size: 14px;
   }
   .logotypes .logos {
     width: 90%;

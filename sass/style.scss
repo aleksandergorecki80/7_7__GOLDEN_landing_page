@@ -18,9 +18,11 @@ $google-color: #d95232;
 $footer-color: #222222;
 
 
+$hero-bg-height: 85vh;
+
 * {
 	box-sizing: border-box;
-//    border: 1px solid red;
+    border: 1px solid red;
 }
 
 body {
@@ -153,7 +155,7 @@ header {
 
     .hero-content{
         display: flex;
-        height: 85vh;
+        height: $hero-bg-height;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -173,7 +175,7 @@ header {
         color: $light-main-color;
     }
     .hero-btn {
-        margin-top: 40px;
+        margin-top: ($hero-bg-height * 0,8);
     }
 }
 
@@ -471,19 +473,63 @@ header {
       }
     }
 
+    /*      hero        */
+
+    .hero {
+        h1 {
+            margin: calc($hero-bg-height*0.05) 20px;
+            font-size: 26px;
+        }
+        h3 {
+            margin: calc($hero-bg-height*0.05) 20px;
+            font-size: 18px;
+        }
+
+    }
+
+    /*  services    */
+
     .services {
         .container {
             width: 90%;
         }
     }
+
+    /*      about us    */
     .about-us {
+        .container {
+            width: 90%;
+        }
+
         h4 {
             margin: 0;
         }
         .hide-for-s {
           display: none;
         }
+
+        %radius {
+            height: 110px;
+            width: 110px;
+            border: 3px solid #f1f1f1;
+        }
+        .tbc {
+
+            p{
+                margin: 2px 0;
+            }
+        
+        }
+        p {
+            font-size: 10px;
+        }
+        h4 {
+            font-size: 14px;
+        }
       }
+
+
+
     .logotypes {
         .logos {
             width: 90%;
