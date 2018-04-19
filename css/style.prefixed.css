@@ -201,6 +201,7 @@
 
 * {
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -363,7 +364,7 @@ header nav input, header nav label {
 }
 
 .hero .hero-btn {
-  margin-top: 40px;
+  margin-top: 0vh, 8;
 }
 
 /*      services section        */
