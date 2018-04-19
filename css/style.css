@@ -665,6 +665,12 @@ header nav input, header nav label {
   .about-us .tbc p {
     margin: 2px 0;
   }
+  .about-us p {
+    font-size: 10px;
+  }
+  .about-us h4 {
+    font-size: 14px;
+  }
   .logotypes .logos {
     width: 90%;
   }
