@@ -22,7 +22,7 @@ $hero-bg-height: 85vh;
 
 * {
 	box-sizing: border-box;
-    border: 1px solid red;
+//    border: 1px solid red;
 }
 
 body {
@@ -207,7 +207,7 @@ header {
    .item {
        background-color: $light-main-color;
        margin: 0;
-       padding: 0;
+       padding: 0 0 5px 0;
    }
    img {
        object-fit: cover;
@@ -499,6 +499,26 @@ header {
     .about-us {
         .container {
             width: 90%;
+        }
+
+        .row {
+            padding-top: 20px;
+        }
+        .row:first-of-type {
+            //padding-top: -20px;
+        }
+        .row::after {
+            content: ""; 
+            display: block; 
+            margin: 0 auto; 
+            width: 50%; 
+            
+            //padding-top: 20px; 
+            border-bottom: 1px solid $subheding-font-color; 
+        }
+        .row:last-of-type::after, .row:first-of-type::after {
+            padding: 20px 0 0 0;
+            border-bottom: none;
         }
 
         h4 {

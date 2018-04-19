@@ -201,7 +201,6 @@
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -396,7 +395,7 @@ header nav input, header nav label {
 .portfolio .item {
   background-color: white;
   margin: 0;
-  padding: 0;
+  padding: 0 0 5px 0;
 }
 
 .portfolio img {
@@ -675,6 +674,20 @@ header nav input, header nav label {
   /*      about us    */
   .about-us .container {
     width: 90%;
+  }
+  .about-us .row {
+    padding-top: 20px;
+  }
+  .about-us .row::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-bottom: 1px solid #777777;
+  }
+  .about-us .row:last-of-type::after, .about-us .row:first-of-type::after {
+    padding: 20px 0 0 0;
+    border-bottom: none;
   }
   .about-us h4 {
     margin: 0;
