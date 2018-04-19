@@ -649,7 +649,7 @@ header nav input, header nav label {
   }
   /*      about us    */
   .about-us .container {
-    width: 90%;
+    width: 50%;
   }
   .about-us h4 {
     margin: 0;
