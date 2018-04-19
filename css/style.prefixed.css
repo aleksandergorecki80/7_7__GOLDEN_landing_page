@@ -659,11 +659,21 @@ header nav input, header nav label {
   header nav #menu-button:checked ~ ul {
     display: block;
   }
+  /*      hero        */
   .hero h1 {
-    margin: 4.25vh 20px;
-    font-size: 16px;
+    margin: calc($hero-bg-height*0.05) 20px;
+    font-size: 26px;
   }
+  .hero h3 {
+    margin: calc($hero-bg-height*0.05) 20px;
+    font-size: 18px;
+  }
+  /*  services    */
   .services .container {
+    width: 90%;
+  }
+  /*      about us    */
+  .about-us .container {
     width: 90%;
   }
   .about-us h4 {
@@ -671,6 +681,14 @@ header nav input, header nav label {
   }
   .about-us .hide-for-s {
     display: none;
+  }
+  .about-us .tbc, .about-us img {
+    height: 110px;
+    width: 110px;
+    border: 3px solid #f1f1f1;
+  }
+  .about-us .tbc p {
+    margin: 2px 0;
   }
   .logotypes .logos {
     width: 90%;

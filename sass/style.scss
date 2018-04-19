@@ -473,26 +473,58 @@ header {
       }
     }
 
+    /*      hero        */
+
     .hero {
         h1 {
-            margin: ($hero-bg-height*0.05) 20px;
-            font-size: 16px;
+            margin: calc($hero-bg-height*0.05) 20px;
+            font-size: 26px;
         }
+        h3 {
+            margin: calc($hero-bg-height*0.05) 20px;
+            font-size: 18px;
+        }
+
     }
+
+    /*  services    */
 
     .services {
         .container {
             width: 90%;
         }
     }
+
+    /*      about us    */
     .about-us {
+        .container {
+            width: 90%;
+        }
+
         h4 {
             margin: 0;
         }
         .hide-for-s {
           display: none;
         }
+
+        %radius {
+            height: 110px;
+            width: 110px;
+            border: 3px solid #f1f1f1;
+        }
+        .tbc {
+
+            p{
+                margin: 2px 0;
+            }
+        
+        }
+
       }
+
+
+
     .logotypes {
         .logos {
             width: 90%;
