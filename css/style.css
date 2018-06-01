@@ -140,8 +140,7 @@
   margin-right: 91.66%;
 }
 
-.row::before,
-.row::after {
+.row::before, .row::after {
   content: "";
   display: table;
   clear: both;
@@ -191,8 +190,7 @@
   .col-s-12 {
     width: 100%;
   }
-  .cleear-s::before,
-  .cleear-s::after {
+  .cleear-s::before, .cleear-s::after {
     content: "";
     display: table;
     clear: both;
@@ -236,8 +234,7 @@
   .col-m-12 {
     width: 100%;
   }
-  .cleear-s::before,
-  .cleear-s::after {
+  .cleear-s::before, .cleear-s::after {
     content: "";
     display: table;
     clear: both;
@@ -282,8 +279,7 @@
   .col-l-12 {
     width: 100%;
   }
-  .cleear-s::before,
-  .cleear-s::after {
+  .cleear-s::before, .cleear-s::after {
     content: "";
     display: table;
     clear: both;
