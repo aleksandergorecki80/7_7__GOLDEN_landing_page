@@ -22,7 +22,7 @@ $hero-bg-height: 85vh;
 
 * {
 	box-sizing: border-box;
-//    border: 1px solid red;
+    border: 1px solid red;
 }
 
 body {
@@ -400,11 +400,9 @@ header {
 
 
 /*      ---------   media styles    ----------------------  */
-
-
-
+/*		- urzadzenia bardzo male telefony		*/
 @media (max-width: 767px){
-	/*		For tablets		*/
+	
     body {
         //background-color: pink;
     }
@@ -572,20 +570,34 @@ header {
     }
 }
 
+/*- urzadzenia male (tablety) */
+@media(min-width: 768px) and (max-width: 991px) {
+    header {
 
-@media (min-width: 767px) and (max-width: 1200px){
-header {
+        nav {
 
-    nav {
-
-        padding: 40px 80px 0 100px;
-        ul {
-          li {
-            padding-right: 20px;
+            padding: 40px 80px 0 100px;
+            ul {
+              li {
+                padding-right: 20px;
+                }
             }
+         }
+      }
+    .team {
+        h2{
+            color: pink;
         }
-     }
-  }
+        background-color: $background-color-2;
+        img {
+            border-radius: 80%;
+            width: 190px;
+            height: 190px;
+            object-fit: cover;
+        }
+    .no-ofset-s {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    }
 }
-
-
