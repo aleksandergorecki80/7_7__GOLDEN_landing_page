@@ -482,6 +482,10 @@ header nav input, header nav label {
 }
 
 /*      about us        */
+.about-us row {
+  margin: 15px 0;
+}
+
 .about-us .tbc, .about-us img {
   border-radius: 50%;
   height: 150px;

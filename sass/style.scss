@@ -187,6 +187,9 @@ header {
 /*      about us        */
 
 .about-us {
+    row{
+        margin: 15px 0;
+    }
   %radius {
     border-radius: 50%;
     height: 150px;
