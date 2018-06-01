@@ -290,6 +290,9 @@ header {
     .google-plus, .google-logo {
         fill: $dark-main-color;
     }
+    .team-footer{
+        margin: 0 25%;
+    }
 }
 
 .logotypes {
@@ -546,6 +549,13 @@ header {
         }
       }
 
+    /* team */
+    .team{
+    .team-footer{
+        margin: 0 10%;
+    }
+    }
+
 
 
     .logotypes {
@@ -599,5 +609,17 @@ header {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .team-footer{
+        margin: 0 10%;
+    }
+    
+    }
+}
+
+/*       srednie       */
+@media(min-width: 992px) and (max-width: 1199px) {
+    p {
+        color: pink;
     }
 }
