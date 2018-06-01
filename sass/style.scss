@@ -365,9 +365,6 @@ header {
 /*		- urzadzenia bardzo male telefony		*/
 
 @media (max-width: 767px) {
-  body {
-    //background-color: pink;
-  }
   section {
     padding: 20px 0;
   }
@@ -560,9 +557,6 @@ header {
       margin-left: 0;
       margin-right: 0;
     }
-  p {
-    color: pink;
-  }
   .about-us{
       .container {
           [class*="col-"]  {
