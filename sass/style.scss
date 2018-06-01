@@ -16,7 +16,7 @@ $footer-color: #222222;
 $hero-bg-height: 85vh;
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+//  border: 1px solid red;
 }
 body {
   color: $dark-main-color;
@@ -534,18 +534,22 @@ header {
       height: 190px;
       object-fit: cover;
     }
-    .no-ofset-s {
-      margin-left: 0;
-      margin-right: 0;
-    }
     .team-footer {
       margin: 0 10%;
     }
   }
+  .no-ofset-s {
+      margin-left: 0;
+      margin-right: 0;
+    }
 }
 /*       srednie       */
 
 @media(min-width: 992px) and (max-width: 1199px) {
+  .no-ofset-s {
+      margin-left: 0;
+      margin-right: 0;
+    }
   p {
     color: pink;
   }

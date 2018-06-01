@@ -288,7 +288,6 @@
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -815,17 +814,21 @@ header nav input, header nav label {
     height: 190px;
     object-fit: cover;
   }
-  .team .no-ofset-s {
-    margin-left: 0;
-    margin-right: 0;
-  }
   .team .team-footer {
     margin: 0 10%;
+  }
+  .no-ofset-s {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 /*       srednie       */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .no-ofset-s {
+    margin-left: 0;
+    margin-right: 0;
+  }
   p {
     color: pink;
   }
