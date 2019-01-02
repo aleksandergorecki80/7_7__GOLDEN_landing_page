@@ -1,1 +1,1 @@
-https://aleksandergorecki80.github.io/7_7__Projekt_do_portfolio/
+https://aleksandergorecki80.github.io/7_7__GOLDEN_landing_page/

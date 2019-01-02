@@ -1,0 +1,94 @@
+App.Views.MenuDark = Backbone.View.extend({
+    events: {
+        'mouseover [data-toggle-target]': 'handleLinkMouseover',
+        'mouseleave [data-toggle-target]': 'handleLinkMouseleave',
+        'mouseleave': 'closeMenubars',
+        'mouseleave [data-menubar]': 'handleMenubarMouseleave'
+    },
+    initialize: function() {
+        this.menubarShowTimeout = null;
+        this.menubarHideTimeout = null;
+        this.$allMenubars = this.$el.find('[data-menubar]');
+        this.menubarToggleDelay = 100;
+        this.menubarAnimationSpeed = 100;
+    },
+    closeMenubars: function() {
+        var self = this;
+        this.$allMenubars.each(function() {
+            var $menubar = $(this);
+            $menubar.stop().animate(
+                {top: -$menubar.height()},
+                self.menubarAnimationSpeed,
+                function() {
+                    $menubar.hide();
+                    $menubar.css('left', 0);
+                }
+            );
+        });
+    },
+    toggleMenubar: function($invoker, $target) {
+        var self = this;
+        self.setMenubarPosition($invoker, $target);
+        $target.stop().animate({top: top}, self.menubarAnimationSpeed, function() {
+            $target.show(0, function() {
+                $target.animate({top: self.$el.height()}, self.menubarAnimationSpeed);
+            });
+         });
+    },
+    checkIfMenubarShouldHide: function($invoker, $target) {
+        if(($invoker.length && !$invoker.is(':hover')) && ($target.length && !$target.is(':hover'))) {
+            this.closeMenubars();
+        }
+    },
+    checkInvokerHoverState: function($invoker, $target) {
+        if($invoker.is(':hover')) {
+            this.toggleMenubar($invoker, $target);
+        }
+    },
+    handleMenubarMouseleave: function(e) {
+        var self = this;
+        var $target = $(e.target);
+        var $targetAttribute = $target.data('menubar');
+        var $invoker = this.$el.find('[data-toggle-target="' + $targetAttribute + '"]');
+        this.menubarHideTimeout = setTimeout(function() {
+            self.checkIfMenubarShouldHide.call(self, $invoker, $target);
+        }, self.menubarToggleDelay);
+    },
+    handleLinkMouseleave: function(e) {
+        var self = this;
+        var $invoker = $(e.target);
+        var $targetAttribute = $invoker.data('toggle-target');
+        var $target = this.$el.find('[data-menubar="' + $targetAttribute + '"]');
+        clearTimeout(this.menubarShowTimeout);
+        this.menubarHideTimeout = setTimeout(function() {
+            self.checkIfMenubarShouldHide.call(self, $invoker, $target);
+        }, self.menubarToggleDelay);
+    },
+    handleLinkMouseover: function(e) {
+        var self = this;
+        var $invoker = $(e.target);
+        var $targetAttribute = $invoker.data('toggle-target');
+        var $target = this.$el.find('[data-menubar="' + $targetAttribute + '"]');
+        this.menubarShowTimeout = setTimeout(function() {
+            self.checkInvokerHoverState($invoker, $target);
+        }, self.menubarToggleDelay);
+
+    },
+    setMenubarPosition: function($invoker, $target) {
+        if($target.attr('data-vertical-menubar') !== undefined) {
+            var position = $target.data('vertical-menubar-position');
+
+            switch(position) {
+                case 'left':
+                    $target.css('left', ($invoker.offset().left - 20));
+                    break;
+                case 'right':
+                    $target.css('left', ($invoker.offset().left + $invoker.width() - $target.width() + 10));
+                    break;
+                default:
+                    $target.css('left', ($invoker.offset().left + $invoker.width()/2 - $target.width()/2));
+                    break;
+            }
+        }
+    },
+});
